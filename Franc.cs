@@ -1,13 +1,11 @@
 namespace TDDMoney.Tests
 {
-    public class Franc
+    public class Franc : Money
     {
         public Franc(int amount)
         {
             Amount = amount;
         }
-
-        private int Amount { get; }
 
         public Franc Times(int multiplier)
         {
@@ -16,7 +14,7 @@ namespace TDDMoney.Tests
 
         public override bool Equals(object? obj)
         {
-            var other = (Franc) obj;
+            Money other = (Money) obj;
             return Amount == other.Amount;
         }
     }
