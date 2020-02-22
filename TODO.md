@@ -38,6 +38,7 @@ NOTE: We will be modifying this list during the exercise.
 - hashCode()
 - Equal null
 - Equal object
+- **5 CHF * 2 = 10 CHF**
 
 ### Syntax
 
