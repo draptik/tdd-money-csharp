@@ -31,7 +31,7 @@ namespace TDDMoney.Tests
         {
             Money other = (Money) obj;
             return Amount == other.Amount
-                   && this.GetType() == other.GetType();
+                   && Currency == other.Currency;
         }
     }
 }
