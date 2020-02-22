@@ -32,7 +32,7 @@ NOTE: We will be modifying this list during the exercise.
 - $5 + 10 CHF = $10 if rate s 2:1
 - ~~$5 * 2 = $10~~
 - Make "Amount" private
-- **Dollar side effects?**
+- ~~Dollar side effects?~~
 - Money rounding?
 
 ### Syntax
