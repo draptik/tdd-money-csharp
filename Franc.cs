@@ -9,7 +9,7 @@ namespace TDDMoney.Tests
 
         public override Money Times(int multiplier)
         {
-            return new Money(Amount * multiplier, Currency);
+            return new Franc(Amount * multiplier, Currency);
         }
     }
 }
