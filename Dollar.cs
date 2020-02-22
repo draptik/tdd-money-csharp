@@ -7,8 +7,6 @@ namespace TDDMoney.Tests
             Amount = amount;
         }
 
-        private int Amount { get; }
-
         public Dollar Times(int multiplier)
         {
             return new Dollar(Amount * multiplier);
