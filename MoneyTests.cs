@@ -8,7 +8,7 @@ namespace TDDMoney.Tests
         [Fact]
         public void Multiplication()
         {
-            Dollar five = Money.Dollar(5);
+            Money five = Money.Dollar(5);
             five.Times(2).Should().Be(new Dollar(10));
             five.Times(3).Should().Be(new Dollar(15));
         }
