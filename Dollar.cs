@@ -16,7 +16,8 @@ namespace TDDMoney.Tests
 
         public override bool Equals(object? obj)
         {
-            return true;
+            var other = (Dollar) obj;
+            return Amount == other.Amount;
         }
     }
 }

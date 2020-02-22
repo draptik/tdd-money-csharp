@@ -19,6 +19,7 @@ namespace TDDMoney.Tests
         public void Equality()
         {
             new Dollar(5).Should().Be(new Dollar(5));
+            new Dollar(5).Should().NotBe(new Dollar(6));
         }
     }
 }
