@@ -6,9 +6,11 @@ namespace TDDMoney.Tests
     public class MoneyTests
     {
         [Fact]
-        public void Test1()
+        public void Multiplication()
         {
-            (1 + 1).Should().Be(2);
+            Dollar five = new Dollar(5);
+            five.Times(2);
+            five.Amount.Should().Be(10);
         }
     }
 }
