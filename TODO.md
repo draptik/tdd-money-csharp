@@ -40,8 +40,9 @@ NOTE: We will be modifying this list during the exercise.
 - Equal object
 - ~~5 CHF * 2 = 10 CHF~~
 - Dollar/Franc duplication
-- **Common equals**
+- ~~Common equals~~
 - Common times
+- **Compare Francs and Dollars**
 
 ### Syntax
 
