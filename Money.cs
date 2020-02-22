@@ -1,9 +1,11 @@
 namespace TDDMoney.Tests
 {
-    public class Money
+    public abstract class Money
     {
         protected internal int Amount { get; set; }
 
+        public abstract Money Times(int multiplier);
+        
         public static Dollar Dollar(int amount)
         {
             return new Dollar(5);
