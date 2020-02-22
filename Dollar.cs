@@ -9,7 +9,7 @@ namespace TDDMoney.Tests
 
         public override Money Times(int multiplier)
         {
-            return Money.Dollar(Amount * multiplier);
+            return new Dollar(Amount * multiplier, "USD");
         }
     }
 }

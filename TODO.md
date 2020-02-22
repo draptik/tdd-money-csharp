@@ -41,7 +41,7 @@ NOTE: We will be modifying this list during the exercise.
 - ~~5 CHF * 2 = 10 CHF~~
 - Dollar/Franc duplication
 - ~~Common equals~~
-- Common times
+- **Common times**
 - ~~Compare Francs and Dollars~~
 - ~~Currency?~~
 - Delete FrancMultiplication?
