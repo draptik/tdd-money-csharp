@@ -7,12 +7,11 @@ namespace TDDMoney.Tests
             Amount = amount;
         }
 
-        public int Amount { get; private set; }
+        public int Amount { get; }
 
         public Dollar Times(int multiplier)
         {
-            Amount *= multiplier;
-            return null;
+            return new Dollar(Amount * multiplier);
         }
     }
 }
