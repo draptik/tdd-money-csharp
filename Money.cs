@@ -14,7 +14,7 @@ namespace TDDMoney.Tests
 
         public virtual Money Times(int multiplier)
         {
-            return null;
+            return new Money(Amount * multiplier, Currency);
         }
         
         public static Dollar Dollar(int amount)
