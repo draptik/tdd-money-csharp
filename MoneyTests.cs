@@ -16,7 +16,7 @@ namespace TDDMoney.Tests
         [Fact]
         public void Franc_Multiplication()
         {
-            Franc five = new Franc(5);
+            Money five = Money.Franc(5);
             five.Times(2).Should().Be(new Franc(10));
             five.Times(3).Should().Be(new Franc(15));
         }

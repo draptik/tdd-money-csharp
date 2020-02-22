@@ -43,7 +43,8 @@ NOTE: We will be modifying this list during the exercise.
 - ~~Common equals~~
 - Common times
 - ~~Compare Francs and Dollars~~
-- Currency?
+- **Currency?**
+- Delete FrancMultiplication?
 
 ### Syntax
 
