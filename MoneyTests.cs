@@ -11,6 +11,8 @@ namespace TDDMoney.Tests
             Dollar five = new Dollar(5);
             five.Times(2);
             five.Amount.Should().Be(10);
+            five.Times(3);
+            five.Amount.Should().Be(15);
         }
     }
 }
