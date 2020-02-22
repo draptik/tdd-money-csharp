@@ -8,7 +8,7 @@ namespace TDDMoney.Tests
 
         public int Amount
         {
-            get { return 10; }
+            get { return 5 * 2; }
         }
 
         public void Times(int multiplier)
