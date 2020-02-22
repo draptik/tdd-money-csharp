@@ -26,6 +26,8 @@ namespace TDDMoney.Tests
         {
             new Dollar(5).Should().Be(new Dollar(5));
             new Dollar(5).Should().NotBe(new Dollar(6));
+            new Franc(5).Should().Be(new Franc(5));
+            new Franc(5).Should().NotBe(new Franc(6));
         }
         
         
