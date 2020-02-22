@@ -9,26 +9,26 @@ namespace TDDMoney.Tests
         public void Multiplication()
         {
             Money five = Money.Dollar(5);
-            five.Times(2).Should().Be(new Dollar(10));
-            five.Times(3).Should().Be(new Dollar(15));
+            five.Times(2).Should().Be(Money.Dollar(10));
+            five.Times(3).Should().Be(Money.Dollar(15));
         }
 
         [Fact]
         public void Franc_Multiplication()
         {
             Money five = Money.Franc(5);
-            five.Times(2).Should().Be(new Franc(10));
-            five.Times(3).Should().Be(new Franc(15));
+            five.Times(2).Should().Be(Money.Franc(10));
+            five.Times(3).Should().Be(Money.Franc(15));
         }
 
         [Fact]
         public void Equality()
         {
-            new Dollar(5).Should().Be(new Dollar(5));
-            new Dollar(5).Should().NotBe(new Dollar(6));
-            new Franc(5).Should().Be(new Franc(5));
-            new Franc(5).Should().NotBe(new Franc(6));
-            new Franc(5).Should().NotBe(new Dollar(5));
+            Money.Dollar(5).Should().Be(Money.Dollar(5));
+            Money.Dollar(5).Should().NotBe(Money.Dollar(6));
+            Money.Franc(5).Should().Be(Money.Franc(5));
+            Money.Franc(5).Should().NotBe(Money.Franc(6));
+            Money.Franc(5).Should().NotBe(Money.Dollar(5));
         }
 
         [Fact]

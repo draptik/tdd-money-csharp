@@ -2,15 +2,15 @@ namespace TDDMoney.Tests
 {
     public class Franc : Money
     {
-        public Franc(int amount)
+        public Franc(int amount, string currency)
         {
             Amount = amount;
-            currency = "CHF";
+            base.currency = currency;
         }
 
         public override Money Times(int multiplier)
         {
-            return new Franc(Amount * multiplier);
+            return Money.Franc(Amount * multiplier);
         }
     }
 }
