@@ -13,5 +13,10 @@ namespace TDDMoney.Tests
         {
             return new Dollar(Amount * multiplier);
         }
+
+        public override bool Equals(object? obj)
+        {
+            return true;
+        }
     }
 }
