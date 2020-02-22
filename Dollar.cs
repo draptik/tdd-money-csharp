@@ -11,7 +11,7 @@ namespace TDDMoney.Tests
 
         public void Times(int multiplier)
         {
-            Amount *= 2;
+            Amount *= multiplier;
         }
     }
 }
