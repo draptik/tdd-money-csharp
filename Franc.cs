@@ -5,11 +5,7 @@ namespace TDDMoney.Tests
         public Franc(int amount)
         {
             Amount = amount;
-        }
-
-        public override string Currency
-        {
-            get { return "CHF"; }
+            currency = "CHF";
         }
 
         public override Money Times(int multiplier)

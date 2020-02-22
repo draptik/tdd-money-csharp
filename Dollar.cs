@@ -5,11 +5,7 @@ namespace TDDMoney.Tests
         public Dollar(int amount)
         {
             Amount = amount;
-        }
-
-        public override string Currency
-        {
-            get { return "USD"; }
+            currency = "USD";
         }
 
         public override Money Times(int multiplier)

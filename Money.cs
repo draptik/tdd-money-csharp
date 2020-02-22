@@ -2,10 +2,12 @@ namespace TDDMoney.Tests
 {
     public abstract class Money
     {
-        protected internal int Amount { get; set; }
+        protected int Amount { get; set; }
 
-        public abstract string Currency { get; }
-        
+        protected string currency;
+
+        public string Currency => currency;
+
         public abstract Money Times(int multiplier);
         
         public static Dollar Dollar(int amount)
