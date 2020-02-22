@@ -34,6 +34,8 @@ NOTE: We will be modifying this list during the exercise.
 - Make "Amount" private
 - ~~Dollar side effects?~~
 - Money rounding?
+- **equals()**
+- hashCode()
 
 ### Syntax
 
