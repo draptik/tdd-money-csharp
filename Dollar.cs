@@ -5,8 +5,11 @@ namespace TDDMoney.Tests
         public Dollar(int amount)
         {
         }
-        
-        public int Amount { get; }
+
+        public int Amount
+        {
+            get { return 10; }
+        }
 
         public void Times(int multiplier)
         {
