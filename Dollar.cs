@@ -6,13 +6,11 @@ namespace TDDMoney.Tests
         {
         }
 
-        public int Amount
-        {
-            get { return 5 * 2; }
-        }
+        public int Amount { get; private set; }
 
         public void Times(int multiplier)
         {
+            Amount = 5 * 2;
         }
     }
 }
