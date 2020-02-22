@@ -4,6 +4,7 @@ namespace TDDMoney.Tests
     {
         public Dollar(int amount)
         {
+            Amount = amount;
         }
 
         public int Amount { get; private set; }
