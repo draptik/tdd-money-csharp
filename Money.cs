@@ -2,11 +2,15 @@ namespace TDDMoney.Tests
 {
     public abstract class Money
     {
-        protected int Amount { get; set; }
+        protected Money(int amount, string currency)
+        {
+            Amount = amount;
+            Currency = currency;
+        }
 
-        protected string currency;
+        protected int Amount { get; }
 
-        public string Currency => currency;
+        public string Currency { get; }
 
         public abstract Money Times(int multiplier);
         
