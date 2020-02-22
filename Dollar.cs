@@ -7,7 +7,7 @@ namespace TDDMoney.Tests
             Amount = amount;
         }
 
-        public int Amount { get; }
+        private int Amount { get; }
 
         public Dollar Times(int multiplier)
         {
