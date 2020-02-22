@@ -2,6 +2,6 @@ namespace TDDMoney.Tests
 {
     public class Money
     {
-        protected int Amount { get; set; }
+        protected internal int Amount { get; set; }
     }
 }
