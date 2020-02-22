@@ -14,5 +14,11 @@ namespace TDDMoney.Tests
             product = five.Times(3);
             product.Amount.Should().Be(15);
         }
+
+        [Fact]
+        public void Equality()
+        {
+            new Dollar(5).Should().Be(new Dollar(5));
+        }
     }
 }
