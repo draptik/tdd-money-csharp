@@ -9,9 +9,10 @@ namespace TDDMoney.Tests
 
         public int Amount { get; private set; }
 
-        public void Times(int multiplier)
+        public Dollar Times(int multiplier)
         {
             Amount *= multiplier;
+            return null;
         }
     }
 }
