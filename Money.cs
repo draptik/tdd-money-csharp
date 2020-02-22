@@ -1,8 +1,8 @@
 namespace TDDMoney.Tests
 {
-    public abstract class Money
+    public class Money
     {
-        protected Money(int amount, string currency)
+        public Money(int amount, string currency)
         {
             Amount = amount;
             Currency = currency;
@@ -12,7 +12,10 @@ namespace TDDMoney.Tests
 
         public string Currency { get; }
 
-        public abstract Money Times(int multiplier);
+        public virtual Money Times(int multiplier)
+        {
+            return null;
+        }
         
         public static Dollar Dollar(int amount)
         {
