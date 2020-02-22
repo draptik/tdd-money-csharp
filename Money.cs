@@ -4,6 +4,8 @@ namespace TDDMoney.Tests
     {
         protected internal int Amount { get; set; }
 
+        public abstract string Currency { get; }
+        
         public abstract Money Times(int multiplier);
         
         public static Dollar Dollar(int amount)

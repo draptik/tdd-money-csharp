@@ -7,6 +7,11 @@ namespace TDDMoney.Tests
             Amount = amount;
         }
 
+        public override string Currency
+        {
+            get { return "USD"; }
+        }
+
         public override Money Times(int multiplier)
         {
             return new Dollar(Amount * multiplier);

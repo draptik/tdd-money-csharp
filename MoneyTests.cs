@@ -30,5 +30,12 @@ namespace TDDMoney.Tests
             new Franc(5).Should().NotBe(new Franc(6));
             new Franc(5).Should().NotBe(new Dollar(5));
         }
+
+        [Fact]
+        public void Currency()
+        {
+            Money.Dollar(1).Currency.Should().Be("USD");
+            Money.Franc(1).Currency.Should().Be("CHF");
+        }
     }
 }
