@@ -10,9 +10,9 @@ namespace TDDMoney.Tests
         {
             Dollar five = new Dollar(5);
             Dollar product = five.Times(2);
-            product.Amount.Should().Be(10);
+            product.Should().Be(new Dollar(10));
             product = five.Times(3);
-            product.Amount.Should().Be(15);
+            product.Should().Be(new Dollar(15));
         }
 
         [Fact]
