@@ -11,11 +11,5 @@ namespace TDDMoney.Tests
         {
             return new Franc(Amount * multiplier);
         }
-
-        public override bool Equals(object? obj)
-        {
-            Money other = (Money) obj;
-            return Amount == other.Amount;
-        }
     }
 }

@@ -42,7 +42,8 @@ NOTE: We will be modifying this list during the exercise.
 - Dollar/Franc duplication
 - ~~Common equals~~
 - Common times
-- **Compare Francs and Dollars**
+- ~~Compare Francs and Dollars~~
+- Currency?
 
 ### Syntax
 
