@@ -35,5 +35,12 @@ namespace TDDMoney.Tests
             Money.Dollar(1).Currency.Should().Be("USD");
             Money.Franc(1).Currency.Should().Be("CHF");
         }
+        
+        [Fact]
+        public void Simple_addition()
+        {
+            Money.Dollar(5).Plus(Money.Dollar(5))
+                .Should().Be(Money.Dollar(10));
+        }
     }
 }
