@@ -45,7 +45,7 @@ NOTE: We will be modifying this list during the exercise.
 - **Dollar/Franc duplication**
 - ~~Compare Francs and Dollars~~
 - ~~Currency?~~
-- Delete FrancMultiplication?
+- ~~Delete FrancMultiplication?~~
 
 ### Syntax
 
