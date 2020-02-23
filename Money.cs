@@ -17,6 +17,11 @@ namespace TDDMoney.Tests
             return new Money(Amount * multiplier, Currency);
         }
         
+        public Money Plus(Money addend)
+        {
+            return new Money(Amount + addend.Amount, Currency);
+        }
+        
         public static Money Dollar(int amount)
         {
             return new Money(amount, "USD");
