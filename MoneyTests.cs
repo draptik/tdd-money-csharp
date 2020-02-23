@@ -39,8 +39,12 @@ namespace TDDMoney.Tests
         [Fact]
         public void Simple_addition()
         {
-            Money.Dollar(5).Plus(Money.Dollar(5))
-                .Should().Be(Money.Dollar(10));
+            var five = Money.Dollar(5);
+            Expression sum = five.Plus(five);
+            Bank bank = new Bank();
+            Money reduced = bank.Reduce(sum, "USD");
+            
+            reduced.Should().Be(Money.Dollar(10));
         }
     }
 }
