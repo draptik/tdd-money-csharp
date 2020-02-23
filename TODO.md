@@ -27,22 +27,25 @@ Our goal:
 
 ## TODO list
 
-NOTE: We will be modifying this list during the exercise.
- 
+Chapter 12 introduces 'intuition'.
+
 - $5 + 10 CHF = $10 if rate s 2:1
-- ~~$5 * 2 = $10~~
-- ~~Make "Amount" private~~
-- ~~Dollar side effects?~~
+- **$5 + $5 = $10**
+
+### Leftovers from Chapter 1 through Chapter 11
+
 - Money rounding?
-- ~~equals()~~
 - hashCode()
 - Equal null
 - Equal object
+- ~~$5 * 2 = $10~~
+- ~~Make "Amount" private~~
+- ~~Dollar side effects?~~
+- ~~equals()~~
 - ~~5 CHF * 2 = 10 CHF~~
-- Dollar/Franc duplication
 - ~~Common equals~~
 - ~~Common times~~
-- **Dollar/Franc duplication**
+- ~~Dollar/Franc duplication~~
 - ~~Compare Francs and Dollars~~
 - ~~Currency?~~
 - ~~Delete FrancMultiplication?~~
