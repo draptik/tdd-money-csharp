@@ -36,7 +36,7 @@ Chapter 12 introduces 'intuition'.
 - ~~Reduce Money with conversion~~
 - ~~Reduce(Bank, String)~~
 - ~~Sum.Plus~~
-- **Expression.Times**
+- ~~Expression.Times~~
 
 ### Leftovers from Chapter 1 through Chapter 11
 
