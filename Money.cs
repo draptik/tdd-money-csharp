@@ -22,6 +22,11 @@ namespace TDDMoney.Tests
             return new Sum(this, addend);
         }
         
+        public Money Reduce(string to)
+        {
+            return null;
+        }
+        
         public static Money Dollar(int amount)
         {
             return new Money(amount, "USD");
