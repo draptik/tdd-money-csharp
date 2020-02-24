@@ -46,5 +46,15 @@ namespace TDDMoney.Tests
             
             reduced.Should().Be(Money.Dollar(10));
         }
+
+        [Fact]
+        public void Plus_returns_Some()
+        {
+            var five = Money.Dollar(5);
+            Expression result = five.Plus(five);
+            Sum sum = (Sum) result;
+            sum.Augend.Should().Be(five);
+            sum.Addend.Should().Be(five);
+        }
     }
 }
