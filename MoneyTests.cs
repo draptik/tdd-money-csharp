@@ -88,5 +88,17 @@ namespace TDDMoney.Tests
         {
             new Bank().Rate("USD", "USD").Should().Be(1);
         }
+        
+        
+        [Fact]
+        public void Mixed_addition()
+        {
+            Expression fiveBucks = Money.Dollar(5);
+            Expression tenFrancs = Money.Franc(10);
+            var bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+            Money result = bank.Reduce(fiveBucks.Plus(tenFrancs), "USD");
+            result.Should().Be(Money.Dollar(10));
+        }
     }
 }
