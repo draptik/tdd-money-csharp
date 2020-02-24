@@ -65,5 +65,13 @@ namespace TDDMoney.Tests
             Money result = bank.Reduce(sum, "USD");
             result.Should().Be(Money.Dollar(7));
         }
+        
+        [Fact]
+        public void Reduce_Money()
+        {
+            Bank bank = new Bank();
+            Money result = bank.Reduce(Money.Dollar(1), "USD");
+            result.Should().Be(Money.Dollar(1));
+        }
     }
 }
