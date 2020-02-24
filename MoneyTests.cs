@@ -112,5 +112,17 @@ namespace TDDMoney.Tests
             Money result = bank.Reduce(sum, "USD");
             result.Should().Be(Money.Dollar(15));
         }
+        
+        [Fact]
+        public void Sum_Times()
+        {
+            Expression fiveBucks = Money.Dollar(5);
+            Expression tenFrancs = Money.Franc(10);
+            var bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+            Expression sum = new Sum(fiveBucks, tenFrancs).Times(2);
+            Money result = bank.Reduce(sum, "USD");
+            result.Should().Be(Money.Dollar(20));
+        }
     }
 }
