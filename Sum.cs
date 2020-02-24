@@ -5,7 +5,7 @@ namespace TDDMoney.Tests
         public Expression Augend;
         public Expression Addend;
 
-        public Sum(Money augend, Money addend)
+        public Sum(Expression augend, Expression addend)
         {
             Augend = augend;
             Addend = addend;
