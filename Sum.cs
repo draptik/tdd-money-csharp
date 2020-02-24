@@ -17,5 +17,10 @@ namespace TDDMoney.Tests
                          + Addend.Reduce(bank, to).Amount;
             return new Money(amount, to);
         }
+        
+        public Expression Plus(Expression addend)
+        {
+            return null;
+        }
     }
 }
