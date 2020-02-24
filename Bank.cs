@@ -4,7 +4,9 @@ namespace TDDMoney.Tests
     {
         public Money Reduce(Expression source, string to)
         {
-            return Money.Dollar(10);
+            Sum sum = (Sum) source;
+            int amount = sum.Augend.Amount + sum.Addend.Amount;
+            return new Money(amount, to);
         }
     }
 }

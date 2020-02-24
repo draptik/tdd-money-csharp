@@ -8,7 +8,7 @@ namespace TDDMoney.Tests
             Currency = currency;
         }
 
-        protected int Amount { get; }
+        public int Amount { get; }
 
         public string Currency { get; }
 
