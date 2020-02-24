@@ -100,5 +100,17 @@ namespace TDDMoney.Tests
             Money result = bank.Reduce(fiveBucks.Plus(tenFrancs), "USD");
             result.Should().Be(Money.Dollar(10));
         }
+        
+        [Fact]
+        public void Sum_plus_money()
+        {
+            Expression fiveBucks = Money.Dollar(5);
+            Expression tenFrancs = Money.Franc(10);
+            var bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+            Expression sum = new Sum(fiveBucks, tenFrancs).Plus(fiveBucks);
+            Money result = bank.Reduce(sum, "USD");
+            result.Should().Be(Money.Dollar(10));
+        }
     }
 }
