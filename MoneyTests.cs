@@ -124,5 +124,12 @@ namespace TDDMoney.Tests
             Money result = bank.Reduce(sum, "USD");
             result.Should().Be(Money.Dollar(20));
         }
+        
+        [Fact]
+        public void Plus_same_currency_returns_money()
+        {
+            Expression sum = Money.Dollar(1).Plus(Money.Dollar(1));
+            sum.Should().BeOfType<Money>();
+        }
     }
 }
