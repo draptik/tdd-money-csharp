@@ -24,7 +24,7 @@ namespace TDDMoney.Tests
         
         public Money Reduce(string to)
         {
-            return null;
+            return this;
         }
         
         public static Money Dollar(int amount)
