@@ -93,7 +93,7 @@ namespace TDDMoney.Tests
         [Fact]
         public void Mixed_addition()
         {
-            Money fiveBucks = Money.Dollar(5);
+            Expression fiveBucks = Money.Dollar(5);
             Expression tenFrancs = Money.Franc(10);
             var bank = new Bank();
             bank.AddRate("CHF", "USD", 2);
