@@ -40,6 +40,8 @@ namespace TDDMoney.Tests
 
         public override bool Equals(object? obj)
         {
+            if (obj == null) return false;
+            
             Money other = (Money) obj;
             return Amount == other.Amount
                    && Currency == other.Currency;

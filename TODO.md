@@ -42,8 +42,8 @@ Chapter 12 introduces 'intuition'.
 
 - Money rounding?
 - hashCode()
-- Equal null
-- Equal object
+- ~~Equal null~~
+- ~~Equal object~~
 - ~~$5 * 2 = $10~~
 - ~~Make "Amount" private~~
 - ~~Dollar side effects?~~

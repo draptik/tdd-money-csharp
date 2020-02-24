@@ -13,9 +13,11 @@ namespace TDDMoney.Tests
 
         public override bool Equals(object? obj)
         {
+            if (obj == null) return false;
+            
             var other = (Pair) obj;
-            // ReSharper disable once PossibleNullReferenceException
-            return _from == other._from && _to == other._to;
+            return _from == other._from
+                   && _to == other._to;
         }
 
         public override int GetHashCode()
