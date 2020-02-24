@@ -56,5 +56,14 @@ namespace TDDMoney.Tests
             sum.Augend.Should().Be(five);
             sum.Addend.Should().Be(five);
         }
+        
+        [Fact]
+        public void Reduce_Sum()
+        {
+            Expression sum = new Sum(Money.Dollar(3), Money.Dollar(4));
+            Bank bank = new Bank();
+            Money result = bank.Reduce(sum, "USD");
+            result.Should().Be(Money.Dollar(7));
+        }
     }
 }
