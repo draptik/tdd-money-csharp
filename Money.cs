@@ -22,7 +22,7 @@ namespace TDDMoney.Tests
             return new Sum(this, addend);
         }
         
-        public Money Reduce(string to)
+        public Money Reduce(Bank bank, string to)
         {
             // Ugly: now suddenly Money knows about exchange rates
             var rate = Currency == "CHF" && to == "USD" ? 2 : 1;
