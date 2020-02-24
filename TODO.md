@@ -31,6 +31,7 @@ Chapter 12 introduces 'intuition'.
 
 - $5 + 10 CHF = $10 if rate s 2:1
 - **$5 + $5 = $10**
+- Returns Money from $5 + $5
 
 ### Leftovers from Chapter 1 through Chapter 11
 
