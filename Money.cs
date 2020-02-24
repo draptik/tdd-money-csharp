@@ -1,6 +1,6 @@
 namespace TDDMoney.Tests
 {
-    public class Money
+    public class Money : Expression
     {
         public Money(int amount, string currency)
         {
@@ -17,7 +17,7 @@ namespace TDDMoney.Tests
             return new Money(Amount * multiplier, Currency);
         }
         
-        public Money Plus(Money addend)
+        public Expression Plus(Money addend)
         {
             return new Money(Amount + addend.Amount, Currency);
         }
