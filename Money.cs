@@ -24,8 +24,7 @@ namespace TDDMoney.Tests
         
         public Money Reduce(Bank bank, string to)
         {
-            // Ugly: now suddenly Money knows about exchange rates
-            var rate = Currency == "CHF" && to == "USD" ? 2 : 1;
+            var rate = bank.Rate(Currency, to);
             return new Money(Amount / rate, to);
         }
         

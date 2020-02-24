@@ -10,5 +10,12 @@ namespace TDDMoney.Tests
         public void AddRate(string from, string to, int rate)
         {
         }
+        
+        public int Rate(string from, string to)
+        {
+            return from == "CHF" && to == "USD"
+                ? 2
+                : 1;
+        }
     }
 }
