@@ -33,7 +33,7 @@ Chapter 12 introduces 'intuition'.
 - **$5 + $5 = $10**
 - Returns Money from $5 + $5
 - ~~Bank.Reduce(Money)~~
-- Reduce Money with conversion
+- **Reduce Money with conversion**
 - Reduce(Bank, String) 
 
 ### Leftovers from Chapter 1 through Chapter 11
