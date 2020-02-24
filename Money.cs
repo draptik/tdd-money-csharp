@@ -17,9 +17,9 @@ namespace TDDMoney.Tests
             return new Money(Amount * multiplier, Currency);
         }
         
-        public Expression Plus(Money addend)
+        public Sum Plus(Money addend)
         {
-            return new Money(Amount + addend.Amount, Currency);
+            return new Sum(this, addend);
         }
         
         public static Money Dollar(int amount)
