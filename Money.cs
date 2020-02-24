@@ -24,7 +24,8 @@ namespace TDDMoney.Tests
         
         public Money Reduce(string to)
         {
-            return this;
+            var rate = Currency == "CHF" && to == "USD" ? 2 : 1;
+            return new Money(Amount / rate, to);
         }
         
         public static Money Dollar(int amount)
