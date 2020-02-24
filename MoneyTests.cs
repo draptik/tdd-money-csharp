@@ -82,5 +82,11 @@ namespace TDDMoney.Tests
             var result = bank.Reduce(Money.Franc(2), "USD");
             result.Should().Be(Money.Dollar(1));
         }
+        
+        [Fact]
+        public void Identity_rate()
+        {
+            new Bank().Rate("USD", "USD").Should().Be(1);
+        }
     }
 }

@@ -1,7 +1,11 @@
+using System.Collections.Generic;
+
 namespace TDDMoney.Tests
 {
     public class Bank
     {
+        private readonly Dictionary<Pair, int> _rates = new Dictionary<Pair, int>();
+        
         public Money Reduce(Expression source, string to)
         {
             return source.Reduce(this, to);
@@ -9,13 +13,18 @@ namespace TDDMoney.Tests
 
         public void AddRate(string from, string to, int rate)
         {
+            _rates.Add(new Pair(from, to), rate);
         }
         
         public int Rate(string from, string to)
         {
-            return from == "CHF" && to == "USD"
-                ? 2
-                : 1;
+            if (from == to)
+            {
+                return 1;
+            }
+            
+            var rate = _rates[new Pair(from, to)];
+            return rate;
         }
     }
 }
