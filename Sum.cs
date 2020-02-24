@@ -2,8 +2,8 @@ namespace TDDMoney.Tests
 {
     public class Sum : Expression
     {
-        public Money Augend;
-        public Money Addend;
+        public Expression Augend;
+        public Expression Addend;
 
         public Sum(Money augend, Money addend)
         {
