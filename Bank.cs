@@ -6,5 +6,9 @@ namespace TDDMoney.Tests
         {
             return source.Reduce(to);
         }
+
+        public void AddRate(string from, string to, int rate)
+        {
+        }
     }
 }

@@ -73,5 +73,14 @@ namespace TDDMoney.Tests
             Money result = bank.Reduce(Money.Dollar(1), "USD");
             result.Should().Be(Money.Dollar(1));
         }
+        
+        [Fact]
+        public void Reduce_money_with_different_currencies()
+        {
+            var bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+            var result = bank.Reduce(Money.Franc(2), "USD");
+            result.Should().Be(Money.Dollar(1));
+        }
     }
 }
