@@ -13,7 +13,8 @@ namespace TDDMoney.Tests
         
         public Money Reduce(Bank bank, string to)
         {
-            var amount = Augend.Amount + Addend.Amount;
+            var amount = Augend.Reduce(bank, to).Amount 
+                         + Addend.Reduce(bank, to).Amount;
             return new Money(amount, to);
         }
     }
