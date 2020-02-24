@@ -110,7 +110,7 @@ namespace TDDMoney.Tests
             bank.AddRate("CHF", "USD", 2);
             Expression sum = new Sum(fiveBucks, tenFrancs).Plus(fiveBucks);
             Money result = bank.Reduce(sum, "USD");
-            result.Should().Be(Money.Dollar(10));
+            result.Should().Be(Money.Dollar(15));
         }
     }
 }
